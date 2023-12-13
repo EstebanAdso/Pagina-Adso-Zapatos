@@ -10,6 +10,19 @@ body{
     margin: 0;
 
 }
+#enviarFormulario{
+    background-color: rgb(247, 247, 248);
+
+}
+.col-3{
+    font-size: 15px;
+}
+#Titulo{
+    color: blueviolet;
+    text-align: center;
+    
+}
+
 #nuestros-programas h3{
     font-size: 300%;
 }
@@ -32,6 +45,10 @@ background-color: blueviolet;
 }
 button:hover{
     background-color: rgb(109, 21, 191);
+}
+#formulario{
+    width: 100%;
+    height: 100vh;
 }
 .container{
     max-width: 1400px;

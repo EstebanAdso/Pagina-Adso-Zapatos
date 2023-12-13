@@ -5,6 +5,7 @@ const closemodal = document.querySelector(".modal_close");
 openmodal.addEventListener("click", (e)=>{
     e.preventDefault();
     modal.classList.add("modal--show");
+    console.log("esta abriendo");
 });
 closemodal.addEventListener("click", (e)=>{
     e.preventDefault();

@@ -6,9 +6,14 @@
     <title>Monaco shoes</title>
     <link rel="stylesheet" href="css/program.css">
     <link rel="stylesheet" href="css/ventana.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
+
+
+
     <header>
         <div class="container">
             <p class="logo">Monaco shoes</p>
@@ -21,15 +26,102 @@
             </nav>
         </div>
     </header>
+
+
+
+
+    
+    <br><br><br>
+
+
+    <section id="enviarFormulario">
+        <form style="margin: 30px; height: 70vh;" action="#">
+            <br>
+            <h1 id="Titulo">Dejanos tus datos, en breve nos comunicaremos Contigo!</h1>
+            <br>
+            <div class="row">
+                <div class="col-3">
+                    <label for="nombres" class="form-label">Nombres</label>
+                    <input type="text" class="form-control" id="nombres" placeholder="Ingrese sus nombres completos">
+                </div>
+                <div class="col-3">
+                    <label for="fechaNacimiento" class="form-label">Fecha nacimiento</label>
+                    <input type="date" class="form-control" id="fechaNacimiento">
+                </div>
+                <div class="col-3">
+                    <label for="color" class="form-label">Color De interes</label>
+                    <input type="color" class="form-control" id="color">
+                </div>
+                <div class="col-3">
+                    <label for="correo" class="form-label" >Correo</label>
+                    <input type="email" class="form-control" id="correo" placeholder="Ingrese su correo">
+                </div>
+                <div class="col-3">
+                    <label for="rango_salario" class="form-label">Presupuesto</label>
+                    <input type="range" class="form-control" id="rango_salario" min="1000000" max="100000000"
+                        value="55000000">
+                </div>
+                <div class="col-3">
+                    <label for="telefono" class="form-label">Telefono</label>
+                    <input type="number" class="form-control" id="telefono">
+                </div>
+                <div class="col-3">
+                    <label for="avatar" class="form-label">tipo de referencia que buscas</label>
+                    <input type="file" class="form-control" id="avatar" accept="image/*">
+                </div>
+                <div class="col-3">
+                    <label for="descripcion" class="form-label">Descripción Larga</label>
+                    <textarea class="form-control" id="descripcion" name="descripcion" rows="4" cols="50" placeholder="Ingresa aquí tu descripción"></textarea>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" id="btnSubmit" class="btn btn-primary btn-lg">Enviar</button>
+                    <button type="reset" id="resetData" class="btn btn-secondary btn-lg">Limpiar</button>
+                    <button type="button" id="deleteData" class="btn btn-lg btn-danger">Eliminar Registros</button>
+                </div>
+            </div>
+        </form>
+        <br>
+        <br>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombres</th>
+                    <th scope="col">Fecha nacimiento</th>
+                    <th scope="col">Edad</th>
+                    <th scope="col">Color</th>
+                    <th scope="col">Correo</th>
+                    <th scope="col">Presupuesto</th>
+                    <th scope="col">Telefono</th>
+                    <th scope="col">Modelo</th>
+                    <th scope="col">Opciones</th>
+                    <th scope="col">Descripción</th>
+                </tr>
+            </thead>
+            <tbody id="bodyList">
+            </tbody>
+        </table>
+    </section>
+
+
+
+
+
+    
     <section id="hero">
         <h1>Compra los mejores zapatos <br> </h1>
         <br>
         <br>
         <br>
-        
-            <button class="ventana">Mas información!</button>
-               
+
+        <button class="ventana">Mas información!</button>
+
     </section>
+
     <section id="somos-proya">
         <div class="container">
             <div class="img-container"></div>
@@ -103,7 +195,7 @@
         <br>
         <br>
         <br>
-        <form action="https://wa.link/tuinhi" target="_blank" >
+        <form action="https://wa.link/tuinhi" target="_blank">
             <button>Oprima Aquí!</button>
         </form>
     </section>
@@ -129,13 +221,20 @@
         <div class="modal_container">
             <img src="imagenes/LOGOMONACO.jpeg" width="200px" height="200px" class="modal_img">
             <h3 class="modal_title">¡Bienvenido a nuestra pagina!</h2>
-            <p class="modal_parrafo">Monaco shoes es una empresa especializada en la fabricación de calzado siempre en contante busqueda de nuevos  mercados.</p>
-            <a href="#" class="modal_close">Cerrar ventana!</a>
+                <p class="modal_parrafo">Monaco shoes es una empresa especializada en la fabricación de calzado siempre
+                    en contante busqueda de nuevos mercados.</p>
+                <a href="#" class="modal_close">Cerrar ventana!</a>
         </div>
     </section>
 
 
     <script src="js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="js/index.js"></script>
 </body>
 
 </html>
